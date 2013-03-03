@@ -83,11 +83,11 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : jekyllbootstrap
+      short_name : zeutrap
     livefyre :
       site_id : 123
     intensedebate :
-      account : 123abc
+      account : zeutrap
     facebook :
       appid : 123
       num_posts: 5
