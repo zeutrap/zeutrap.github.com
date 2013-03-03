@@ -91,11 +91,10 @@ Python核心发行代码里面优先使用ASCII码或Latin-1编码。3.0后UTF-8
 
 目前Python库的命名规范尚未达成一致，但有一些推荐的标准。
 在Python里面，有一些具有特定意义的下划线前缀或者后继的特殊格式。如：
-1. '_single_leading_underscore'：（单下划线开始）弱"内部使用"指示器。例如：'from M import * '不会导入以下划线开始的对象。
-2. single_trailing_underscore_：（单下划线结束）规定使用其来避免与Python关键字冲突，例如：
-Tkinter.Toplevel(master, class_='ClassName') 在参数class后面加单下划线，避免与关键字class冲突
-3. __double_leading_underscore：（双下划线开始）命名一个类的属性时，调用"name mangling"（类FooBar中，__boo 变为了 _FooBar__boo; 见下文）
-4. __double_leading_and_trailing_underscore__：（双下划线开始和结束）存活在用户控制命名空间的"magic"对象或属性。 例如__init__, __import__ 或 __file__。永远不要起这样的名字。
+1. `_single_leading_underscore`：（单下划线开始）弱"内部使用"指示器。例如：`from M import * `不会导入以下划线开始的对象。
+2. `single_trailing_underscore_`：（单下划线结束）规定使用其来避免与Python关键字冲突，例如：`Tkinter.Toplevel(master, class_='ClassName')` 在参数class后面加单下划线，避免与关键字class冲突
+3. `__double_leading_underscore`：（双下划线开始）命名一个类的属性时，调用"name mangling"（类FooBar中，`__boo` 变为了 `_FooBar__boo`, 见下文)
+4. `__double_leading_and_trailing_underscore__`：（双下划线开始和结束）存活在用户控制命名空间的"magic"对象或属性。 例如`__init__`, `__import__` 或 `__file__`。永远不要起这样的名字。
 
 ###避免使用的命名
 
@@ -143,7 +142,7 @@ Tkinter.Toplevel(master, class_='ClassName') 在参数class后面加单下划线
 
 使用双下划线前缀来调用"name mangling"来避免与子类命名冲突。
 
-如果类Foo有个属性叫__a，那么它不能使用Foo.__a读取，但仍然可以Foo._Foo__a来读取。
+如果类Foo有个属性叫__a，那么它不能使用`Foo.__a`读取，但仍然可以`Foo._Foo__a`来读取。
 
 ###常量
 
@@ -173,11 +172,11 @@ Tkinter.Toplevel(master, class_='ClassName') 在参数class后面加单下划线
 
 模块或者包应当定义自己的异常基类，这个类应当继承自内置的Exception类。
 
-当抛出一个异常的时候，使用raise ValueError('message')代替旧的raise ValueError, 'message'格式。这是由于当异常的参数很长或者是格式化字符串的时候，由于括号的关系，我们不需要使用多行连接符。 旧的格式在Python 3 中被移除。
+当抛出一个异常的时候，使用`raise ValueError('message')`代替旧的`raise ValueError, 'message'`格式。这是由于当异常的参数很长或者是格式化字符串的时候，由于括号的关系，我们不需要使用多行连接符。 旧的格式在Python 3 中被移除。
 
-当捕获一个异常的时候，要用详细的异常声明来代替简单的except: 语句。
+当捕获一个异常的时候，要用详细的异常声明来代替简单的`except:`语句。
 
-一个空的except:语句将会捕获 SystemExit 和 KeyboardInterrrupt 异常。这会使得很难用Control-C来中断一个程序，并且还会隐藏其他的问题。
+一个空的`except:`语句将会捕获 SystemExit 和 KeyboardInterrrupt 异常。这会使得很难用Control-C来中断一个程序，并且还会隐藏其他的问题。
 
 另外，对于所有的try/except语句，限制try语句来减少必要代码的数量。 再者，可以避免掩盖问题。
 
@@ -199,7 +198,7 @@ No:
         # 将会Catch 函数handle_value()中抛出的异常
         return key_not_found(key)
 
-使用''.startswith() 和 ''.endswith()而非字符切片去检测前缀或后缀。
+使用`''.startswith()` 和 `''.endswith()` 而非字符切片去检测前缀或后缀。
 
 对象类型比较总要用 isinstance() 而非直接比较。
 
