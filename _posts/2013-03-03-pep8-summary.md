@@ -7,7 +7,7 @@ tags: ["Python", "PEP8", "Code Style"]
 ---
 {% include JB/setup %}
 
-原文见：[zeutrap's cnblogs] (http://www.cnblogs.com/zeutrap/archive/2012/08/29/2661085.html)
+原文见：[zeutrap's cnblogs](http://www.cnblogs.com/zeutrap/archive/2012/08/29/2661085.html)  
 
 工作中写了个Python的模块，CodeReview的时候被告知有些不符合Python规范的地方。于是找到了[PEP8的全文](http://www.python.org/dev/peps/pep-0008/)阅读了一番，还是受益匪浅。下面是做的一些摘要。
 
@@ -90,11 +90,11 @@ Python核心发行代码里面优先使用ASCII码或Latin-1编码。3.0后UTF-8
 ##命名规范
 
 目前Python库的命名规范尚未达成一致，但有一些推荐的标准。
-在Python里面，有一些具有特定意义的下划线前缀或者后继的特殊格式。如：
-1. `_single_leading_underscore`：（单下划线开始）弱"内部使用"指示器。例如：`from M import * `不会导入以下划线开始的对象。
-2. `single_trailing_underscore_`：（单下划线结束）规定使用其来避免与Python关键字冲突，例如：`Tkinter.Toplevel(master, class_='ClassName')` 在参数class后面加单下划线，避免与关键字class冲突
-3. `__double_leading_underscore`：（双下划线开始）命名一个类的属性时，调用"name mangling"（类FooBar中，`__boo` 变为了 `_FooBar__boo`, 见下文)
-4. `__double_leading_and_trailing_underscore__`：（双下划线开始和结束）存活在用户控制命名空间的"magic"对象或属性。 例如`__init__`, `__import__` 或 `__file__`。永远不要起这样的名字。
+在Python里面，有一些具有特定意义的下划线前缀或者后继的特殊格式。如：  
+1. `_single_leading_underscore`：（单下划线开始）弱"内部使用"指示器。例如：`from M import * `不会导入以下划线开始的对象。  
+2. `single_trailing_underscore_`：（单下划线结束）规定使用其来避免与Python关键字冲突，例如：`Tkinter.Toplevel(master, class_='ClassName')` 在参数class后面加单下划线，避免与关键字class冲突。  
+3. `__double_leading_underscore`：（双下划线开始）命名一个类的属性时，调用"name mangling"（类FooBar中，`__boo` 变为了 `_FooBar__boo`, 见下文)。  
+4. `__double_leading_and_trailing_underscore__`：（双下划线开始和结束）存活在用户控制命名空间的"magic"对象或属性。 例如`__init__`, `__import__` 或 `__file__`。永远不要起这样的名字。  
 
 ###避免使用的命名
 
