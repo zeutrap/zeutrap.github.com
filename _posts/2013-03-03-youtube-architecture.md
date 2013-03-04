@@ -7,7 +7,7 @@ tags: ["all-time-favorites系列", "架构", "译文"]
 ---
 {% include JB/setup %}
 
-本文翻译自 HighScalability.com的[YouTube Architecture] (http://highscalability.com/youtube-architecture)一文。
+本文翻译自 HighScalability.com的[YouTube Architecture](http://highscalability.com/youtube-architecture)一文。
 
 YouTube增长很快，现在每日视频的观看次数已经达到1亿次，但其团队人员却只有屈指可数的几人而已。他们是如何将这些视频展示给所有用户的？他们被Google收购后又是如何发展的呢？
 
