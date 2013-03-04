@@ -3,7 +3,7 @@ layout: post
 title: "YouTube架构"
 description: ""
 category: "Architecture"
-tags: ["all-time-favorites系列", "架构", "译文"]
+tags: ["all-time-favorites系列", "一日一架构", "架构", "译文"]
 ---
 {% include JB/setup %}
 
@@ -19,7 +19,7 @@ YouTube增长很快，现在每日视频的观看次数已经达到1亿次，但
 2. Python
 3. Linux(Suse)
 4. MySQL
-5. Psyco, 一个动态的 python->C 编译器
+5. Psyco，一个动态的 python->C 编译器
 6. Lighttpd，在视频方面Apache的替代者
 
 ##数字
@@ -38,7 +38,7 @@ YouTube增长很快，现在每日视频的观看次数已经达到1亿次，但
         sleep();
         notice_new_bottleneck();
     }
-这个迭代每天进行很多次
+这个迭代每天进行很多次。
 
 ##网页服务器
 1. 使用NetScalar来进行负载均和静态页面缓存。
@@ -143,7 +143,6 @@ YouTube增长很快，现在每日视频的观看次数已经达到1亿次，但
   ---操作系统：磁盘IO
   ---硬件：内存，RAID
 7. **作为一个团队的成功**。拥有一支懂得整个系统和系统底层的交叉团队。比如有人能够设置打印机，机器，安装网络等等。拥有一支好的团队一切皆有可能。
-
 
 *译者按: 由于水平有限，文中免不了存在多处错误。还望读者多多指正*。 
 
