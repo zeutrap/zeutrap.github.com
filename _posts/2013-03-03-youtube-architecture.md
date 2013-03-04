@@ -2,7 +2,7 @@
 layout: post
 title: "YouTube架构"
 description: ""
-category: 
+category: "Architecture"
 tags: ["all-time-favorites系列", "架构", "译文"]
 ---
 {% include JB/setup %}
