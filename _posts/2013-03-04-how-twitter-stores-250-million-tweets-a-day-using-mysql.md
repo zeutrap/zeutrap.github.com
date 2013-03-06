@@ -2,7 +2,7 @@
 layout: post
 title: "Twitter如何利用MySQL每日存储2.5亿条微博"
 description: ""
-category: "Architecture"
+category: "architecture"
 tags: ["all-time-favorites系列", "一日一架构", "架构", "译文"]
 ---
 {% include JB/setup %}

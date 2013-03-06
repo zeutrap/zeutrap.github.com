@@ -2,7 +2,7 @@
 layout: post
 title: "Python编程规范(PEP8)阅读摘要"
 description: ""
-category: "Programming"
+category: "programming"
 tags: ["Python", "PEP8", "Code Style"]
 ---
 {% include JB/setup %}

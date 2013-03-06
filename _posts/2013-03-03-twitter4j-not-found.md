@@ -2,7 +2,7 @@
 layout: post
 title: "Strom-Starter构建失败，缺少twitter4j包 的解决办法"
 description: ""
-category: "Streamming Computing"
+category: "streamming computing"
 tags: ["Storm", "Maven", "Twitter4j"]
 ---
 {% include JB/setup %}
