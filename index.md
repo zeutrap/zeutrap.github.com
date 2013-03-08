@@ -4,12 +4,10 @@ title: Welcome to Zeutrap's Collections!
 ---
 {% include JB/setup %}
 
-Here's my posts list.
+<h4> Here's my posts list. </h4>
 
-<ul class="posts">
+<table class="table table-hover ">
   {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+    <tr><th><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</th><th>{{ post.date | date_to_string }}</th></tr>
   {% endfor %}
-</ul>
-
-
+</table>
