@@ -47,7 +47,7 @@ Flickr既是我最喜欢的鸟的名字又是互联网界领先的图片分享�
 * 每天增加图片超过40万张  
 
 ##架构
-* 可以从这个[幻灯片](http://www.slideshare.net/techdude/scalable-web-architectures-common-patterns-and-approaches/138)找到关于Flickr架构的图片。大概描述如下：
+* 可以从这个[幻灯片](http://www.slideshare.net/techdude/scalable-web-architectures-common-patterns-and-approaches/138)找到关于Flickr架构的图片。大概描述如下：  
   -- 成对的ServerIron  
   ----Squid缓存  
   ------Net App's  
