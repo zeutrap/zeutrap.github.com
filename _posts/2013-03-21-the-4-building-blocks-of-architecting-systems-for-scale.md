@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "大规模系统架构的4个关键部分"
+title: "大规模系统架构的四个关键部分"
 description: ""
 category: "architecture"
 tags: ["all-time-favorites系列", "一日一架构", "架构", "译文"]
